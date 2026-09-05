@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - PKR Cash Counter & Calculator</title>
+    <meta name="description" content="Official Privacy Policy for PKR Cash Counter & Calculator Android Application. 100% offline, zero data collection, private local storage.">
+    <style>
+        :root {
+            --primary: #064e3b;
+            --primary-light: #047857;
+            --accent: #d97706;
+            --bg: #f8fafc;
+            --surface: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #475569;
+            --border: #e2e8f0;
+            --badge-bg: #ecfdf5;
+            --badge-border: #a7f3d0;
+            --badge-text: #065f46;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --primary: #10b981;
+                --primary-light: #34d399;
+                --accent: #fbbf24;
+                --bg: #0f172a;
+                --surface: #1e293b;
+                --text-main: #f1f5f9;
+                --text-muted: #94a3b8;
+                --border: #334155;
+                --badge-bg: #064e3b;
+                --badge-border: #047857;
+                --badge-text: #6ee7b7;
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text-main);
+            line-height: 1.65;
+            padding: 24px 16px;
+        }
+
+        .container {
+            max-width: 820px;
+            margin: 0 auto;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 40px 32px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 24px 18px;
+                border-radius: 16px;
+            }
+        }
+
+        header {
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 24px;
+            margin-bottom: 28px;
+        }
+
+        .app-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--badge-bg);
+            border: 1px solid var(--badge-border);
+            color: var(--badge-text);
+            padding: 6px 14px;
+            border-radius: 999px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 14px;
+        }
+
+        h1 {
+            font-size: 2.1rem;
+            color: var(--text-main);
+            line-height: 1.25;
+            margin-bottom: 8px;
+        }
+
+        .urdu-subtitle {
+            font-size: 1.15rem;
+            color: var(--accent);
+            font-weight: 600;
+            direction: rtl;
+            margin-bottom: 12px;
+        }
+
+        .meta-info {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .summary-card {
+            background: var(--badge-bg);
+            border: 1px solid var(--badge-border);
+            border-radius: 14px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        .summary-card h3 {
+            color: var(--badge-text);
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .summary-list {
+            list-style: none;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+
+        .summary-list li {
+            position: relative;
+            padding-left: 26px;
+            font-size: 0.95rem;
+            color: var(--badge-text);
+        }
+
+        .summary-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 4px;
+            font-weight: bold;
+            color: var(--primary-light);
+        }
+
+        .link-box {
+            background: var(--surface);
+            border: 1px dashed var(--primary);
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+        }
+
+        .link-text {
+            font-family: monospace;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            word-break: break-all;
+        }
+
+        .copy-btn {
+            background: var(--primary);
+            color: #ffffff;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: opacity 0.2s;
+        }
+
+        .copy-btn:hover {
+            opacity: 0.9;
+        }
+
+        section {
+            margin-bottom: 28px;
+        }
+
+        h2 {
+            font-size: 1.35rem;
+            color: var(--text-main);
+            margin-bottom: 12px;
+            padding-bottom: 6px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        p {
+            color: var(--text-muted);
+            margin-bottom: 12px;
+            font-size: 1rem;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 14px;
+            color: var(--text-muted);
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        .urdu-section {
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 18px;
+            margin-top: 24px;
+            direction: rtl;
+            text-align: right;
+        }
+
+        .urdu-section h3 {
+            color: var(--text-main);
+            font-size: 1.15rem;
+            margin-bottom: 10px;
+        }
+
+        .urdu-section p, .urdu-section li {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.8;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="app-badge">
+            <span>🇵🇰</span>
+            <span>Official Policy • 100% Offline & Private</span>
+        </div>
+        <h1>Privacy Policy</h1>
+        <div class="urdu-subtitle">رازداری کی پالیسی - پی کے آر کیش کاؤنٹر و کیلکولیٹر</div>
+        <div class="meta-info">
+            <span><strong>App:</strong> PKR Cash Counter & Calculator</span>
+            <span><strong>Package ID:</strong> com.aistudio.pkrcashcounter.qvzwx</span>
+            <span><strong>Last Updated:</strong> September 2026</span>
+            <span><strong>Developer:</strong> rsc.cpssgd@gmail.com</span>
+        </div>
+    </header>
+
+    <!-- Public Shareable Link Box -->
+    <div class="link-box">
+        <div>
+            <div style="font-size: 0.8rem; font-weight: 600; text-transform: uppercase; color: var(--primary);">Permanent Policy Link</div>
+            <div class="link-text" id="policyUrl">https://rsc-cpssgd.github.io/pkr-cash-counter/privacy-policy.html</div>
+        </div>
+        <button class="copy-btn" onclick="copyPolicyLink()">Copy Link</button>
+    </div>
+
+    <!-- Quick Privacy Highlights -->
+    <div class="summary-card">
+        <h3>🛡️ Quick Privacy Highlights (At A Glance)</h3>
+        <ul class="summary-list">
+            <li><strong>Zero Data Collection:</strong> We do NOT collect, transmit, store, or sell any personal or financial information.</li>
+            <li><strong>100% Offline Operation:</strong> The application functions entirely offline on your device without internet connectivity.</li>
+            <li><strong>Local SQLite / Room Database:</strong> All currency counts, notes, coins, and saved slips reside solely on your device.</li>
+            <li><strong>Zero Dangerous Permissions:</strong> No access requested to your camera, microphone, contacts, storage, or GPS location.</li>
+            <li><strong>User-Initiated Sharing:</strong> Cash slips are only shared when you deliberately press the Share button using standard Android system sharing.</li>
+            <li><strong>Safe for All Ages:</strong> Compliant with COPPA and Google Play Families policy.</li>
+        </ul>
+    </div>
+
+    <section>
+        <h2>1. Introduction</h2>
+        <p>This Privacy Policy explains how <strong>PKR Cash Counter & Calculator</strong> ("we", "our", or "the app") handles information when you use our Android application. We respect your privacy and are committed to protecting it. Our application is designed with a strict <strong>offline-first architecture</strong>, meaning your calculations, cash balances, and financial records never leave your mobile device.</p>
+    </section>
+
+    <section>
+        <h2>2. Information We Collect (Zero Personal Data)</h2>
+        <p><strong>We do not collect any personal data.</strong></p>
+        <ul>
+            <li><strong>No Account Required:</strong> You do not need to register, sign in, or provide an email address, phone number, or name to use the app.</li>
+            <li><strong>No Financial Account Linking:</strong> The app does not connect to bank accounts, debit/credit cards, mobile wallets (Easypaisa, JazzCash, SadaPay, Nayapay), or external payment gateways.</li>
+            <li><strong>No Usage Analytics or Tracking:</strong> We do not include third-party tracking libraries, advertising SDKs (such as Google AdMob or Facebook Audience Network), or analytics frameworks (such as Firebase Analytics or Mixpanel).</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>3. Local Storage on Your Device</h2>
+        <p>Any data entered into the application—such as note counts (Rs. 5000, 1000, 500, 100, 75, 50, 20, 10), coin counts, target totals, customer change calculations, and saved cash slips—is stored locally in your device's private application sandbox using an embedded SQLite / Android Room database.</p>
+        <ul>
+            <li>This local data is isolated by the Android OS and cannot be accessed by other applications.</li>
+            <li>You can edit, clear, or permanently delete any saved slip at any time within the app.</li>
+            <li>If you uninstall the application or clear app data via Android Settings, all locally stored records are permanently erased from your device.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>4. Device Permissions</h2>
+        <p>The application operates with <strong>zero dangerous or sensitive Android permissions</strong>. It does NOT request or require:</p>
+        <ul>
+            <li>NO Camera permission</li>
+            <li>NO Microphone permission</li>
+            <li>NO Location permission (GPS/Network)</li>
+            <li>NO Contacts or Call Logs permission</li>
+            <li>NO External Media / Storage permissions (Photos, Videos, Audio)</li>
+            <li>NO Phone State or Hardware ID permissions</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>5. Sharing Features (User-Initiated Only)</h2>
+        <p>The app includes an optional "Share Slip" feature that lets you export formatted cash breakdowns as text (for example, to WhatsApp, SMS, Telegram, or Email). This feature:</p>
+        <ul>
+            <li>Is triggered <strong>exclusively by your manual action</strong> when you tap the Share button.</li>
+            <li>Uses the native Android System Share Sheet (<code>Intent.ACTION_SEND</code>).</li>
+            <li>Does not transmit data to any background server operated by us. You have full discretion over whom you share the text with.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>6. Third-Party Services and Links</h2>
+        <p>The app does not integrate third-party advertising networks, analytics providers, or behavioral trackers. If you choose to share your cash slip via external applications (e.g., messaging apps), the privacy policies of those respective services will govern the handling of that shared text.</p>
+    </section>
+
+    <section>
+        <h2>7. Children's Privacy</h2>
+        <p>Our app does not address anyone under the age of 13. We do not knowingly collect personal identifiable information from children or any other users. The app is a non-invasive mathematical utility safe for all age groups.</p>
+    </section>
+
+    <section>
+        <h2>8. Changes to This Privacy Policy</h2>
+        <p>We may update this Privacy Policy periodically to reflect app updates or regulatory compliance. Any changes will be published at this link with an updated "Last Updated" date. Because our app does not collect user contact information, we encourage you to review this page periodically.</p>
+    </section>
+
+    <section>
+        <h2>9. Contact Us</h2>
+        <p>If you have any questions, suggestions, or concerns regarding this Privacy Policy or the security of the app, please contact us at:</p>
+        <p>
+            <strong>Developer Contact:</strong> <a href="mailto:rsc.cpssgd@gmail.com">rsc.cpssgd@gmail.com</a><br>
+            <strong>Application:</strong> PKR Cash Counter & Calculator<br>
+            <strong>Country:</strong> Pakistan
+        </p>
+    </section>
+
+    <!-- Urdu Language Summary -->
+    <div class="urdu-section">
+        <h3>اردو خلاصہ (Urdu Summary)</h3>
+        <p><strong>پی کے آر کیش کاؤنٹر و کیلکولیٹر</strong> آپ کی رازداری کا مکمل احترام کرتا ہے۔</p>
+        <ul>
+            <li>یہ ایپ 100 فیصد آف لائن کام کرتی ہے اور انٹرنیٹ کے بغیر استعمال کی جا سکتی ہے۔</li>
+            <li>ہم کوئی بھی ذاتی معلومات، نام، فون نمبر، یا بینک ڈیٹا جمع یا محفوظ نہیں کرتے۔</li>
+            <li>آپ کا تمام کیش ڈیٹا (نوٹ، سکے، اور محفوظ شدہ سلپس) صرف آپ کے اپنے موبائل فون میں محفوظ رہتا ہے۔</li>
+            <li>یہ ایپ کیمرہ، لوکیشن، مائیکروفون یا رابطوں (Contacts) کی کوئی اجازت طلب نہیں کرتی۔</li>
+            <li>سلپ شیئر کرنے کی صورت میں یہ صرف آپ کے کلک کرنے پر آپ کی پسندیدہ ایپ (جیسے واٹس ایپ یا میسج) کے ذریعے بھیجی جاتی ہے۔</li>
+        </ul>
+        <p style="margin-top: 8px;">کسی بھی سوال کی صورت میں رابطہ کریں: <strong>rsc.cpssgd@gmail.com</strong></p>
+    </div>
+
+    <footer>
+        <p>© 2026 PKR Cash Counter & Calculator. All rights reserved.</p>
+        <p style="margin-top: 6px;"><a href="#policyUrl">Back to Policy Link</a></p>
+    </footer>
+</div>
+
+<script>
+    function copyPolicyLink() {
+        const url = document.getElementById('policyUrl').innerText;
+        navigator.clipboard.writeText(url).then(() => {
+            const btn = document.querySelector('.copy-btn');
+            const originalText = btn.innerText;
+            btn.innerText = 'Copied! ✓';
+            setTimeout(() => {
+                btn.innerText = originalText;
+            }, 2500);
+        }).catch(() => {
+            alert('Link: ' + url);
+        });
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+{
+  "name": "PKR Cash Counter",
+  "description": "Pakistani Rupee (PKR) note denomination calculator and automatic cash tally tool with instant totals, breakdown, and voucher history.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
